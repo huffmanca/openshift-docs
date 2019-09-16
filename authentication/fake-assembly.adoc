@@ -1,0 +1,13 @@
+[id="configuring-attribute"]
+= Fake assembly 1
+include::modules/common-attributes.adoc[]
+:context: configuring-attribute
+toc::[]
+
+= Fake Assembly
+
+Testing environment variables in string
+
+:FILE: aws=
+
+include::modules/fake-file.adoc[leveloffset=+1]

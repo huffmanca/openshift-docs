@@ -1,0 +1,27 @@
+// Module included in the following assemblies:
+//
+// * authentication/identity_providers/configuring-htpasswd-identity-provider.adoc
+
+[id="showing-attributes_{context}"]
+= Creating the Secret
+
+This procedure demonstrates creating a secret that must contain a named
+attribute, where the attribute requires a different name based on the
+context.
+
+.Prerequisite
+
+* Create a file containing the certificate to use.
+
+.Procedure
+
+* Create an {product-title} Secret that contains the required attribute.
++
+[source,subs="attributes+"]
+----
+$ oc create secret generic htpass-secret --from-file={FILE}</path/to/file.crt> -n openshift-config
+----
++
+
+// Undefine the attribute to catch any errors at the end
+:!FILE:
